@@ -1,27 +1,24 @@
-.page {
-  padding: 2rem;
-}
 .navbar {
   display: flex;
-  gap: 1rem;
-  background: #f2f2f2;
-  padding: 1rem;
+  gap: 1.5rem;
+  background: #ffffff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  justify-content: flex-start;
+  align-items: center;
 }
-.product-list {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+
+.navbar a {
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s, background-color 0.2s;
 }
-.product-card {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  width: 150px;
-}
-.btn {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: purple;
-  color: white;
-  border: none;
-  cursor: pointer;
+
+.navbar a:hover {
+  color: #9147ff;
+  background-color: #f2f2f2;
+  border-radius: 4px;
 }

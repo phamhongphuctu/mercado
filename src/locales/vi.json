@@ -8,6 +8,11 @@
       "buy": "Mua ngay",
       "price": "Giá",
       "flavor": "Thảo xạ hương"
+    },
+    "nav": {
+      "home": "Trang chủ",
+      "market": "Chợ",
+      "me": "Tôi"
     }
   }
   

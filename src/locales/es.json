@@ -8,6 +8,11 @@
       "buy": "Comprar ahora",
       "price": "Precio",
       "flavor": "Hierba de tomillo"
+    },
+    "nav": {
+      "home": "Inicio",
+      "market": "Mercado",
+      "me": "Yo"
     }
   }
   

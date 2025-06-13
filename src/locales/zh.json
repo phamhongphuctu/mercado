@@ -1,13 +1,18 @@
 {
     "home": {
       "welcome": "欢迎来到 Mercado",
-      "desc": "Pi 网络内的市场"
+      "desc": "Pi 网络生态系统中的市场"
     },
     "market": {
       "title": "产品列表",
       "buy": "立即购买",
       "price": "价格",
       "flavor": "百里香"
+    },
+    "nav": {
+      "home": "首页",
+      "market": "市场",
+      "me": "我"
     }
   }
   
