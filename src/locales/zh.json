@@ -1,0 +1,13 @@
+{
+    "home": {
+      "welcome": "欢迎来到 Mercado",
+      "desc": "Pi 网络内的市场"
+    },
+    "market": {
+      "title": "产品列表",
+      "buy": "立即购买",
+      "price": "价格",
+      "flavor": "百里香"
+    }
+  }
+  

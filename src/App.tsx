@@ -1,17 +1,26 @@
 // Mercado DApp - Khung chợ online trao đổi hàng hóa cho Pi Network
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "./components/LanguageSelector";
+
+
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 
 function Home() {
+  const { t } = useTranslation();
+
   return (
     <div className="page">
-      <h1>Bienvenido a Mercado</h1>
-      <p>Nơi giao dịch hàng hóa phi tâp trung trong hệ sinh thái Pi.</p>
-      <Link to="/market" className="btn">Khám phá gian hàng</Link>
+      <LanguageSelector />
+      <h1>{t("home.welcome")}</h1>
+      <p>{t("home.desc")}</p>
+      <Link to="/market" className="btn">{t("market.buy")}</Link>
     </div>
   );
 }
+
+
 
 function Market() {
   return (

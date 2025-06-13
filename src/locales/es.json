@@ -1,0 +1,13 @@
+{
+    "home": {
+      "welcome": "Bienvenido a Mercado",
+      "desc": "Mercado dentro del ecosistema Pi"
+    },
+    "market": {
+      "title": "Lista de productos",
+      "buy": "Comprar ahora",
+      "price": "Precio",
+      "flavor": "Hierba de tomillo"
+    }
+  }
+  

@@ -1,0 +1,13 @@
+{
+    "home": {
+      "welcome": "Welcome to Mercado",
+      "desc": "Marketplace inside Pi ecosystem"
+    },
+    "market": {
+      "title": "Product list",
+      "buy": "Buy now",
+      "price": "Price",
+      "flavor": "Thyme herb"
+    }
+  }
+  

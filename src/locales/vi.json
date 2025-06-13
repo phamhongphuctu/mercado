@@ -1,0 +1,13 @@
+{
+    "home": {
+      "welcome": "Chào mừng đến với Mercado",
+      "desc": "Nơi giao dịch hàng hóa nội bộ hệ sinh thái Pi"
+    },
+    "market": {
+      "title": "Danh sách sản phẩm",
+      "buy": "Mua ngay",
+      "price": "Giá",
+      "flavor": "Thảo xạ hương"
+    }
+  }
+  
