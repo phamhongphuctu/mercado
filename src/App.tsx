@@ -42,17 +42,12 @@ function App() {
 
   return (
     <Router>
-      <nav className="navbar">
-  <div className="nav-item">
-    <Link to="/">{t("nav.home")}</Link>
-  </div>
-  <div className="nav-item">
-    <Link to="/market">{t("nav.market")}</Link>
-  </div>
-  <div className="nav-item">
-    <Link to="/profile">{t("nav.me")}</Link>
-  </div>
+      <nav className="bottom-nav">
+  <Link to="/" className="bottom-nav-item">{t("nav.home")}</Link>
+  <Link to="/market" className="bottom-nav-item">{t("nav.market")}</Link>
+  <Link to="/profile" className="bottom-nav-item">{t("nav.me")}</Link>
 </nav>
+
 
 
       <Routes>

@@ -1,3 +1,4 @@
+/* ROOT VARIABLES & DEFAULT STYLING */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -25,16 +26,16 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
 }
 
+/* HEADINGS & BUTTON */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -65,4 +66,32 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* ✅ BOTTOM NAVIGATION FIXED */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #ffffff;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+}
+
+.bottom-nav-item {
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+
+.bottom-nav-item:hover {
+  color: #9147ff;
 }
