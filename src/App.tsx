@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "./components/LanguageSelector";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -17,10 +16,21 @@ function Home() {
 }
 
 function Market() {
+  const { t } = useTranslation();
   return (
     <div className="page">
-      <h2>Danh sách sản phẩm</h2>
-      <p>...</p>
+      <h2>{t("market.title")}</h2>
+      {/* ... */}
+    </div>
+  );
+}
+
+function Profile() {
+  const { t } = useTranslation();
+  return (
+    <div className="page">
+      <h2>{t("nav.me")}</h2>
+      {/* ... */}
     </div>
   );
 }
@@ -31,17 +41,15 @@ function App() {
   return (
     <Router>
       <nav className="navbar">
-  <Link to="/">{t("nav.home")}</Link>
-  <Link to="/market">{t("nav.market")}</Link>
-  <Link to="/profile">{t("nav.me")}</Link>
-</nav>
-
-
+        <Link to="/" className="nav-item">{t("nav.home")}</Link>
+        <Link to="/market" className="nav-item">{t("nav.market")}</Link>
+        <Link to="/profile" className="nav-item">{t("nav.me")}</Link>
+      </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/market" element={<Market />} />
-        {/* Nếu có trang Profile thì thêm ở đây */}
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
   );
