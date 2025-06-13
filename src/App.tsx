@@ -1,35 +1,70 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// Mercado DApp - Khung chợ online trao đổi hàng hóa cho Pi Network
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function Home() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="page">
+      <h1>Bienvenido a Mercado</h1>
+      <p>Nơi giao dịch hàng hóa phi tâp trung trong hệ sinh thái Pi.</p>
+      <Link to="/market" className="btn">Khám phá gian hàng</Link>
+    </div>
+  );
 }
 
-export default App
+function Market() {
+  return (
+    <div className="page">
+      <h2>Danh sách sản phẩm</h2>
+      <div className="product-list">
+        <div className="product-card">
+          <img src="https://via.placeholder.com/150" alt="Product" />
+          <p>Tháp xả hương</p>
+          <p>Giá: 5 Pi</p>
+          <button>Mua ngay</button>
+        </div>
+        <div className="product-card">
+          <img src="https://via.placeholder.com/150" alt="Product" />
+          <p>Cà phê rang xay</p>
+          <p>Giá: 2 Pi</p>
+          <button>Mua ngay</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Profile() {
+  return (
+    <div className="page">
+      <h2>Thông tin cá nhân</h2>
+      <p>Username: @username</p>
+      <p>Ví Pi: GDZK...YFZ</p>
+      <p>Ngôn ngữ: Tiếng Việt</p>
+    </div>
+  );
+}
+
+function App() {
+  const [language] = useState("vi");
+
+  return (
+    <Router>
+      <div className="app">
+        <nav className="navbar">
+          <Link to="/">Trang chủ</Link>
+          <Link to="/market">Chợ</Link>
+          <Link to="/profile">Tôi</Link>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/market" element={<Market />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
