@@ -31,6 +31,35 @@
   border-color: #9147ff;
 }
 
+/* ✅ BOTTOM NAVIGATION */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999;
+}
+
+.bottom-nav-item {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  flex: 1;
+  text-align: center;
+}
+
+.bottom-nav-item:hover {
+  color: #9147ff;
+  background-color: #f5f5f5;
+}
 
 /* BUTTON */
 .btn {
@@ -48,6 +77,7 @@
   gap: 1rem;
   flex-wrap: wrap;
 }
+
 .product-card {
   border: 1px solid #ccc;
   padding: 1rem;

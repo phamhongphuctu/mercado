@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "./components/LanguageSelector";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -42,19 +41,18 @@ function App() {
 
   return (
     <Router>
-      <nav className="bottom-nav">
-  <Link to="/" className="bottom-nav-item">{t("nav.home")}</Link>
-  <Link to="/market" className="bottom-nav-item">{t("nav.market")}</Link>
-  <Link to="/profile" className="bottom-nav-item">{t("nav.me")}</Link>
-</nav>
-
-
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/market" element={<Market />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
+
+      {/* ✅ BOTTOM NAVIGATION */}
+      <div className="bottom-nav">
+        <Link to="/" className="bottom-nav-item">{t("nav.home")}</Link>
+        <Link to="/market" className="bottom-nav-item">{t("nav.market")}</Link>
+        <Link to="/profile" className="bottom-nav-item">{t("nav.me")}</Link>
+      </div>
     </Router>
   );
 }
