@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "./components/LanguageSelector";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";

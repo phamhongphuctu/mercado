@@ -1,7 +1,6 @@
-import React from 'react'
-import './i18n'; // thêm dòng này ở đầu file main.tsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './i18n'; // tích hợp i18n
+import App from './App';
 
-import ReactDOM from 'react-dom/client'
-import App from './App'
-
-ReactDOM.createRoot(document.getElementById('root')!).render(<App />)
+ReactDOM.createRoot(document.getElementById('root')!).render(<App />);

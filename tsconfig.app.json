@@ -1,16 +1,13 @@
 {
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "jsx": "react-jsx",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "incremental": true,
-    "tsBuildInfoFile": "./build.tsbuildinfo"
+    "outDir": "./out-tsc/app",
+    "types": []
   },
-  "include": ["src"]
+  "files": [
+    "src/main.tsx"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
 }
