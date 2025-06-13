@@ -13,10 +13,7 @@
   align-items: center;
 }
 
-.nav-item {
-  display: flex; /* THÊM DÒNG NÀY */
-  align-items: center;
-  justify-content: center;
+.nav-item a {
   padding: 0.5rem 1rem;
   background-color: #f2f2f2;
   color: #333;
@@ -28,12 +25,12 @@
   transition: all 0.2s ease;
 }
 
-
-.nav-item:hover {
+.nav-item a:hover {
   background-color: #e0e0e0;
   color: #9147ff;
   border-color: #9147ff;
 }
+
 
 /* BUTTON */
 .btn {

@@ -43,10 +43,17 @@ function App() {
   return (
     <Router>
       <nav className="navbar">
-        <Link to="/" className="nav-item">{t("nav.home")}</Link>
-        <Link to="/market" className="nav-item">{t("nav.market")}</Link>
-        <Link to="/profile" className="nav-item">{t("nav.me")}</Link>
-      </nav>
+  <div className="nav-item">
+    <Link to="/">{t("nav.home")}</Link>
+  </div>
+  <div className="nav-item">
+    <Link to="/market">{t("nav.market")}</Link>
+  </div>
+  <div className="nav-item">
+    <Link to="/profile">{t("nav.me")}</Link>
+  </div>
+</nav>
+
 
       <Routes>
         <Route path="/" element={<Home />} />
