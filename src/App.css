@@ -83,3 +83,10 @@
   padding: 1rem;
   width: 150px;
 }
+
+/* ✅ BODY CHUẨN Ở NGOÀI */
+body {
+  margin: 0;
+  padding-bottom: 60px; /* Để không bị che bởi thanh điều hướng */
+  min-height: 100vh;
+}
